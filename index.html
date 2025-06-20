@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box2 {
+        display: none;
+      }
+      .result {
+        display: none;
+      }
+
+      .mainbox {
+        width: 55%;
+        height: 300px;
+        border: 1px solid rgb(0, 0, 0);
+        margin: 0 auto;
+      }
+      .title {
+        background-color: red;
+        padding-left: 5px;
+        color: white;
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+      }
+
+      .pl1_title {
+        text-align: center;
+        font-size: 22px;
+      }
+
+      .player1_input {
+        margin-left: 120px;
+      }
+      .player1_btn {
+        margin-left: 175px;
+        background-color: red;
+        color: white;
+        /* border: none; */
+        border-radius: 10px;
+        padding: 5px 15px 5px 15px;
+      }
+
+      .pl2_title {
+        text-align: center;
+        font-size: 22px;
+      }
+
+      .player2_input {
+        margin-left: 120px;
+      }
+      .player2_btn {
+        margin-left: 175px;
+        background-color: red;
+        color: white;
+        /* border: none; */
+        border-radius: 10px;
+        padding: 5px 15px 5px 15px;
+      }
+
+      .error {
+        font-size: 15px;
+        text-align: center;
+        background-color: rgb(44, 40, 40);
+        color: white;
+        /* padding: 10px 5px 10px; */
+        margin-top: 50px;
+      }
+
+      .result {
+        margin: 0 auto;
+        background-color: red;
+        color: white;
+        border-radius: 10px;
+        padding: 5px 15px 5px 15px;
+      }
+
+      .result_txt {
+        text-align: center;
+        font-size: 30px;
+      }
+      .marq_banner {
+        background-color: rgb(141, 134, 134);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mainbox">
+      <h1 class="title">NUMBER GESSING GAME</h1>
+
+      <div class="box1">
+        <h3 class="pl1_title">PLAYER ONE</h3>
+        <input class="player1_input" type="password" />
+        <br />
+        <br />
+        <button class="player1_btn">SUBMIT</button>
+      </div>
+
+      <div class="box2">
+        <h3 class="pl2_title">PLAYER TWO</h3>
+        <input class="player2_input" type="password" />
+        <br />
+        <br />
+        <button class="player2_btn">Submit</button>
+      </div>
+
+      <h4 class="error"></h4>
+      <button class="result">Check Result</button>
+
+      <h4 class="result_txt"></h4>
+
+      <marquee class="marq_banner" behavior="" direction="left"></marquee>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
